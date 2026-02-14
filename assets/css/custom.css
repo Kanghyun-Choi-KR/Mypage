@@ -1,0 +1,13 @@
+/* custom.css - 내가 추가한 스타일만 모아두는 파일 */
+
+/* Pretendard를 "한글 우선"으로 쓰기 */
+body, input, select, textarea, button {
+  font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
+}
+
+/* 한글 줄바꿈/가독성 튜닝(선택이지만 예뻐짐) */
+body {
+  line-height: 1.7;
+  letter-spacing: -0.01em;
+  word-break: keep-all;
+}
