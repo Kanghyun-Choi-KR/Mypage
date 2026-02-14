@@ -5,6 +5,10 @@ body, input, select, textarea, button {
   font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
+}
+
 /* ÇÑ±Û ÁÙ¹Ù²Ş/°¡µ¶¼º Æ©´×(¼±ÅÃÀÌÁö¸¸ ¿¹»µÁü) */
 body {
   line-height: 1.7;
