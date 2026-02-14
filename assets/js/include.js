@@ -1,4 +1,3 @@
-<script>
 (async function () {
   // "Mypage"처럼 서브경로(GitHub Pages: /Mypage/)에서도 깨지지 않게 baseURI 기준 상대경로 사용
   const sidebarUrl = new URL('partials/sidebar.html', document.baseURI);
@@ -16,4 +15,3 @@
     console.error(e);
   }
 })();
-</script>
