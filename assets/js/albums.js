@@ -2,13 +2,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
   const albums = [
     {
-      title: "Seung-yoon Lee, 开己",
+      title: "Seung-yoon Lee, 鞐劚",
       img: "album_art/leeseungyoon_yeokseong.jpg",
       note: "album_note/leeseungyoon_yeokseong.html"
     },
     
     {
-      title: "Seung-yoon Lee, 厕狼 芭贸",
+      title: "Seung-yoon Lee, 昕堨潣 瓯办矘",
       img: "album_art/leeseungyoon_dream.jpg",
       note: "album_note/leeseungyoon_dream.html"
     },

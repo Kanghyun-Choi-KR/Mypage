@@ -11,7 +11,7 @@
     body.page-music #main h2{
       font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
     }
-    
+
     body.page-music #wrapper{
       display: flex !important;
       align-items: stretch;
@@ -27,19 +27,52 @@
       width: 300px;      /* 안전장치 */
     }
 
-    body.page-music .image.object {
-      float: none !important;
-      width: auto !important;
+    body.page-music .banner{
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      margin: 0 0 3rem 0;
     }
 
-    body.page-music .image.object img {
+    /* 글 영역 */
+    body.page-music .banner .content{
+      flex: 1 1 auto;
+      min-width: 0;
+    }
+
+    /* 이미지 영역 */
+    body.page-music .banner .image.object{
+      flex: 0 0 320px;   /* 원하는 이미지 칸 폭 */
+      width: 320px;
+      margin: 0;
+      float: none !important;     /* 혹시 남아있는 float 무력화 */
+    }
+
+    /* 이미지 자체 */
+    body.page-music .banner .image.object img{
       display: block;
-      width: auto !important;
-      max-width: 320px !important; /* 원하는 크기 */
-      height: auto !important;
-      margin: 0 auto 2em auto;
+      width: 100%;
+      height: auto;
+      max-width: none !important; /* 기존 max-width 충돌 방지 */
+      margin: 0 !important;       /* 가운데 정렬 제거 */
       border-radius: 10px;
     }
+
+    /* 모바일에서는 세로로(이미지 위/아래) */
+    @media (max-width: 736px){
+      body.page-music .banner{
+        flex-direction: column;
+      }
+      body.page-music .banner .image.object{
+        width: 100%;
+        flex-basis: auto;
+      }
+      body.page-music .banner .image.object img{
+        width: 100%;
+      }
+    }
+
 
 
     </style>
