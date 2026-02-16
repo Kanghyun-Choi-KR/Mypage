@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     section.innerHTML = `
       <div class="content">
           <header>
-            <h2 class="album-title" title="${album.title}">
+            <h2 class="album-title js-title" ${album.title}">
               ${album.title}
               </h2>
                   <div class="album-artist">${album.artist}</div>
@@ -74,6 +74,13 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     list.appendChild(section);
   }
+
+  list.addEventListener("click", function(e) {
+    const title = e.target.closest(".js-title");
+    if (!title) return;
+
+    title.classList.toggle("is-open");
+  });
 
 });
 

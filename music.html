@@ -86,13 +86,23 @@
 
 
     body.page-music .album-title {
-      white-space: nowrap;       /* 한 줄 유지 */
-      overflow: hidden;          /* 넘치는 부분 숨김 */
-      text-overflow: ellipsis;   /* ... 처리 */
-
       font-size: clamp(1rem, 1.8vw, 1.6rem);
       font-weight: 700;
+      line-height: 1.2;
+
+      white-space: nowrap;       /* 기본은 한 줄 */
+      overflow: hidden;
+      text-overflow: ellipsis;   /* ... */
+
+      cursor: pointer;
     }
+
+    body.page-music .album-title.is-open {
+      white-space: normal;       /* 클릭하면 펼쳐짐 */
+      overflow: visible;
+      text-overflow: clip;
+    }
+
 
     body.page-music .album-artist {
       font-size: 1.1rem;
