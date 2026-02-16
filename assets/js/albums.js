@@ -58,7 +58,9 @@ document.addEventListener("DOMContentLoaded", async () => {
     section.innerHTML = `
       <div class="content">
           <header>
-            <h2 class="album-title">${album.title}</h2>
+            <h2 class="album-title" title="${album.title}">
+              ${album.title}
+              </h2>
                   <div class="album-artist">${album.artist}</div>
                       </header>
                           <div class="album-desc">
