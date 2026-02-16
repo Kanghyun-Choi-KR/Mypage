@@ -11,15 +11,14 @@ h2 {
   font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
 }
 
-    /* 한글 가독성(선택) */
-    body {
-      line-height: 1.7;
-      letter-spacing: -0.01em;
-      word-break: keep-all;
-    }
     body.page-music #wrapper {
       display: flex !important;
       align-items: stretch;
+    }
+    
+    body.page-music #sidebar {
+      flex: 0 0 300px;      /* 사이드바 폭 */
+      width: 300px !important;
     }
 
     body.page-music .image.object {
