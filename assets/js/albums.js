@@ -1,21 +1,14 @@
-const albums = [
-  { title: "Seung-yoon Lee, ¿ª¼º", img: "album_art/leeseungyoon_yeokseong.jpg", desc: "Temp" },
-  { title: "Seung-yoon Lee, ²ÞÀÇ °ÅÃ³", img: "album_art/leeseungyoon_dream.jpg", desc: "Temp" },
-  { title: "Anri, TIMELY!!", img: "album_art/anri_timely.jpg", desc: "Temp" },
-  { title: "Anri, Heaven Beach", img: "album_art/anri_heavenbeach.jpg", desc: "Temp" },
-];
-
 document.addEventListener("DOMContentLoaded", async () => {
 
   const albums = [
     {
-      title: "Seung-yoon Lee, ¿¿",
+      title: "Seung-yoon Lee, ¿ª¼º",
       img: "album_art/leeseungyoon_yeokseong.jpg",
       note: "album_note/leeseungyoon_yeokseong.html"
     },
     
     {
-      title: "Seung-yoon Lee, ¿¿ ¿¿",
+      title: "Seung-yoon Lee, ²ÞÀÇ °ÅÃ³",
       img: "album_art/leeseungyoon_dream.jpg",
       note: "album_note/leeseungyoon_dream.html"
     },
@@ -44,7 +37,7 @@ document.addEventListener("DOMContentLoaded", async () => {
       const res = await fetch(album.note);
       noteHtml = await res.text();
     } catch (err) {
-      noteHtml = "<p>¿¿¿ ¿¿¿ ¿ ¿¿¿¿.</p>";
+      noteHtml = "<p>Can't read the content</p>";
     }
 
     const section = document.createElement("section");
