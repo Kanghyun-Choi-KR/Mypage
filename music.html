@@ -11,13 +11,20 @@ h2 {
   font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
 }
 
-    body.page-music #wrapper {
+
+    body.page-music #wrapper{
       display: flex !important;
       align-items: stretch;
     }
-    
-    body.page-music #sidebar {
-      float: left !important;
+
+    body.page-music #main{
+      flex: 1 1 auto;
+      min-width: 0; /* flex overflow 방지에 중요 */
+    }
+
+    body.page-music #sidebar{
+      flex: 0 0 300px;   /* 사이드바 폭 */
+      width: 300px;      /* 안전장치 */
     }
 
     body.page-music .image.object {
@@ -39,73 +46,71 @@ h2 {
   </head>
 
   <body class="is-preload page-music">
+
+    <!-- Wrapper -->
     <div id="wrapper">
 
-      <!-- Wrapper -->
-      <div id="wrapper">
+      <!-- Main -->
+      <div id="main">
+        <div class="inner">
 
-        <!-- Main -->
-        <div id="main">
-          <div class="inner">
+          <header class="main">
+            <h1>My LP Collections</h1>
+          </header>
 
-            <header class="main">
-              <h1>My LP Collections</h1>
-            </header>
+          <!-- Banner -->
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h2>Seung-yoon Lee, 역성</h2>
+              </header>
+              <p>Temp</p>
+            </div>
+            <span class="image object">
+              <img src="album_art/leeseungyoon_yeokseong.jpg" alt="" />
+            </span>
+          </section>
 
-            <!-- Banner -->
-            <section id="banner">
-              <div class="content">
-                <header>
-                  <h2>Seung-yoon Lee, 역성</h2>
-                </header>
-                <p>Temp</p>
-              </div>
-              <span class="image object">
-                <img src="album_art/leeseungyoon_yeokseong.jpg" alt="" />
-              </span>
-            </section>
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h2>Seung-yoon Lee, 꿈의 거처</h2>
+              </header>
+              <p>Temp</p>
+            </div>
+            <span class="image object">
+              <img src="album_art/leeseungyoon_dream.jpg" alt="" />
+            </span>
+          </section>
 
-            <section id="banner">
-              <div class="content">
-                <header>
-                  <h2>Seung-yoon Lee, 꿈의 거처</h2>
-                </header>
-                <p>Temp</p>
-              </div>
-              <span class="image object">
-                <img src="album_art/leeseungyoon_dream.jpg" alt="" />
-              </span>
-            </section>
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h2>Anri, TIMELY!!</h2>
+              </header>
+              <p>Temp</p>
+            </div>
+            <span class="image object">
+              <img src="album_art/anri_timely.jpg" alt="" />
+            </span>
+          </section>
 
-            <section id="banner">
-              <div class="content">
-                <header>
-                  <h2>Anri, TIMELY!!</h2>
-                </header>
-                <p>Temp</p>
-              </div>
-              <span class="image object">
-                <img src="album_art/anri_timely.jpg" alt="" />
-              </span>
-            </section>
-
-            <section id="banner">
-              <div class="content">
-                <header>
-                  <h2>Anri, Heaven Beach</h2>
-                </header>
-                <p>Temp</p>
-              </div>
-              <span class="image object">
-                <img src="album_art/anri_heavenbeach.jpg" alt="" />
-              </span>
-            </section>
-          </div>
+          <section id="banner">
+            <div class="content">
+              <header>
+                <h2>Anri, Heaven Beach</h2>
+              </header>
+              <p>Temp</p>
+            </div>
+            <span class="image object">
+              <img src="album_art/anri_heavenbeach.jpg" alt="" />
+            </span>
+          </section>
         </div>
-
-        <div id="sidebar"></div>
-
       </div>
+
+      <div id="sidebar"></div>
+
 
       <!-- Scripts -->
       <script src="assets/js/jquery.min.js"></script>
