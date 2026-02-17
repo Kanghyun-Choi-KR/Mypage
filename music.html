@@ -66,20 +66,6 @@
         margin-top: 3rem;
     }
 
-    /* 모바일에서는 세로로(이미지 위/아래) */
-    @media (max-width: 736px){
-      body.page-music .banner{
-        flex-direction: column;
-      }
-      body.page-music .banner .image.object{
-        width: 100%;
-        flex-basis: auto;
-      }
-      body.page-music .banner .image.object img{
-        width: 100%;
-      }
-    }
-
 
     body.page-music .album-title {
       font-size: clamp(1rem, 1.8vw, 1.6rem);
@@ -112,6 +98,25 @@
       line-height: 1.7;
     }
 
+    /* 모바일에서는 세로로(이미지 위/아래) */
+    @media (max-width: 736px){
+      body.page-music .banner{
+        flex-direction: column;
+      }
+      body.page-music .banner .image.object{
+        width: 100%;
+        flex-basis: auto;
+      }
+      body.page-music .banner .image.object img{
+        width: 100%;
+      }
+      body.page-music .album-title {
+        white-space: normal;
+        overflow: visible;
+        text-overflow: clip;
+        word-break: break-word;
+      }
+    }
 
 
     </style>
@@ -126,7 +131,15 @@
       <div id="main">
         <div class="inner">
 
-          <header class="main">
+          <header id="header">
+            <a href="index.html" class="logo"><strong></strong></a>
+            <ul class="icons">
+              <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+              <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+              <li><a href="#" class="icon brands fa-snapchat-ghost"><span class="label">Snapchat</span></a></li>
+              <li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+              <li><a href="#" class="icon brands fa-medium-m"><span class="label">Medium</span></a></li>
+            </ul>
             <h1>My LP Collections</h1>
           </header>
 
