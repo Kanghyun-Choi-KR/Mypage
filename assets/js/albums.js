@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     {
       title: "The Rise And Fall Of Ziggy Stardust And The Spiders From Mars",
       artist: "David Bowie",
-      link: "https://open.spotify.com/album/48D1hRORqJq52qsnUYZX56?si=YVVGxDWXS9-1rbK59FMMzQ"
+      link: "https://open.spotify.com/album/48D1hRORqJq52qsnUYZX56?si=YVVGxDWXS9-1rbK59FMMzQ",
       img: "album_art/davidbowie_stardust.jpg",
       note: "album_note/davidbowie_stardust.html"
     },
