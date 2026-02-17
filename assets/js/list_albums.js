@@ -14,6 +14,30 @@ const template = [
 const albums = [
 
   {
+    title: "FOR YOU",
+    artist: "Yamashita Tatsuro",
+    link: "",
+    img: "album_art/tatsuro_foryou.jpg",
+    note: "album_note/template.html"
+  },
+
+  {
+    title: "Melodies",
+    artist: "Yamashita Tatsuro",
+    link: "",
+    img: "album_art/tatsuro_melodies.jpg",
+    note: "album_note/template.html"
+  },
+  
+  {
+    title: "Big Wave",
+    artist: "Yamashita Tatsuro",
+    link: "",
+    img: "album_art/tatsuro_bigwave.jpg",
+    note: "album_note/template.html"
+  },
+
+  {
     title: "LOVE ALL SERVE ALL",
     artist: "Fuji Kaze",
     link: "",
