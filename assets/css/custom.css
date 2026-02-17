@@ -2,6 +2,9 @@
 MOBILE SIDEBAR TOGGLE (Off-canvas)
 모바일에서 사이드바를 토글 방식으로 변경
 ===================================================== */
+.sidebar-toggle {
+  display: none;
+}
 
 @media (max-width: 736px) {
 
@@ -9,6 +12,7 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
   토글 버튼
   =============================== */
 .sidebar-toggle {
+  display: block;
   position: fixed;
   top: 0.75rem;
 
@@ -29,6 +33,11 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
 
   cursor: pointer;
 }
+
+.sidebar-toggle[aria-expanded="true"] {
+  display: none !important;
+}
+
 
 /* ===============================
 기본 상태: 사이드바 화면 밖으로
@@ -107,6 +116,7 @@ body.page-music .banner .content {
 }
 
 body.page-music .album-title {
+  font-size: clamp(1rem, 1.8vw, 1.6rem);
   display: block !important;
   width: 100% !important;          /* 폭을 반드시 제한 */
   max-width: 100% !important;
