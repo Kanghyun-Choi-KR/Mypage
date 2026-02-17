@@ -13,6 +13,23 @@ const template = [
 
 const albums = [
 
+
+  {
+    title: "LOVE",
+    artist: "ADOY",
+    link: "https://open.spotify.com/album/7E0KQMrRuZRM0EcIPjlXSO?si=kiFHiloATOi3YghcZGHOYA",
+    img: "album_art/adoy_love.jpg",
+    note: "album_note/template.html"
+  },
+
+  {
+    title: "CATNIP",
+    artist: "ADOY",
+    link: "https://open.spotify.com/album/66DrcdGAs9lGvTbsf5Tgdh?si=zIhHNpJhTraePaCcrFDEJw",
+    img: "album_art/adoy_catnip.jpg",
+    note: "album_note/template.html"
+  },
+  
   {
     title: "FOR YOU",
     artist: "Yamashita Tatsuro",
@@ -40,7 +57,7 @@ const albums = [
   {
     title: "LOVE ALL SERVE ALL",
     artist: "Fuji Kaze",
-    link: "",
+    link: "https://open.spotify.com/album/7Ip9X7pnkhJ4cwDoBnvneD?si=skagkdd7S4myrdWFRZLnWg",
     img: "album_art/fuji_loveallserveall.jpg",
     note: "album_note/template.html"
   },
@@ -49,7 +66,7 @@ const albums = [
   {
     title: "Prema",
     artist: "Fuji Kaze",
-    link: "",
+    link: "https://open.spotify.com/album/6ELurkxQnAif7u5Vv6Wly9?si=VpX6KI1-RrWImO2_tLfGcA",
     img: "album_art/fuji_prema.jpg",
     note: "album_note/template.html"
   },
@@ -89,6 +106,7 @@ const albums = [
   {
     title: "역성",
     artist: "Seung-yoon Lee",
+    link: "https://open.spotify.com/album/02SKwqYSENWwsZIZ9epjES?si=qqpo9H69TpezQi_kGf9oUg",
     img: "album_art/leeseungyoon_yeokseong.jpg",
     note: "album_note/leeseungyoon_yeokseong.html"
   },
@@ -96,6 +114,7 @@ const albums = [
   {
     title: "꿈의 거처",
     artist: "Seung-yoon Lee",
+    link: "https://open.spotify.com/album/7nYp9JSCBmrEN30yjXI5rJ?si=flX5Bc1GRRCln3VaS50wfg",
     img: "album_art/leeseungyoon_dream.jpg",
     note: "album_note/leeseungyoon_dream.html"
   },
@@ -103,6 +122,7 @@ const albums = [
   {
     title: "TIMELY!!",
     artist: "Anri",
+    link: "https://open.spotify.com/album/3OvZYx7AAGplmJjwD29JiV?si=8Xa5vqlIT-26hn76unJshA",
     img: "album_art/anri_timely.jpg",
     note: "album_note/anri_timely.html"
   },
@@ -110,6 +130,7 @@ const albums = [
   {
     title: "Heaven Beach",
     artist: "Anri",
+    link: "https://open.spotify.com/album/74XLaVRIeHY51nuXcC5RuS?si=DlzgcTXwT16ZNGsurw1njQ",
     img: "album_art/anri_heavenbeach.jpg",
     note: "album_note/anri_heavenbeach.html"
   }
