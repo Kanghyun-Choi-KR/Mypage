@@ -11,7 +11,9 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
 .sidebar-toggle {
   position: fixed;
   top: 0.75rem;
-  left: 0.75rem;   /* 오른쪽으로 옮기고 싶으면 left 대신 right 사용 */
+
+  right: 0.75rem;
+  left: auto;
 
   z-index: 10002;
 
@@ -26,7 +28,6 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
   color: #fff;
 
   cursor: pointer;
-  transition: transform 0.25s ease;
 }
 
 /* ===============================
@@ -96,6 +97,24 @@ body.sidebar-open .sidebar-toggle {
   transform: translateX(min(85vw, 320px));
 }
 
+
+body.page-music .banner .content {
+  min-width: 0; /* flex/overflow 핵심 */
+}
+
+body.page-music .album-title {
+  display: block;          /* ellipsis 안정화 */
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+body.page-music .album-title.is-open {
+  white-space: normal;     /* 클릭해서 펼칠 때는 예외 */
+  overflow: visible;
+  text-overflow: clip;
+}
 
                                   }
 
