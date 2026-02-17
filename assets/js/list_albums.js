@@ -1,5 +1,42 @@
+const template = [
+
+  {
+    title: "",
+    artist: "",
+    link: "",
+    img: "album_art/.jpg",
+    note: "album_note/.html"
+  },
+
+];
+
+
 const albums = [
 
+  {
+    title: "Guardians of the Galaxy: Awesome Mix Vol. 3",
+    artist: "Various Artists",
+    link: "",
+    img: "album_art/awesomemix_3.jpg",
+    note: "album_note/template.html"
+  },
+  
+  {
+    title: "Guardians of the Galaxy: Awesome Mix Vol. 2",
+    artist: "Various Artists",
+    link: "",
+    img: "album_art/awesomemix_2.jpg",
+    note: "album_note/template.html"
+  },
+
+  {
+    title: "Guardians of the Galaxy: Awesome Mix Vol. 1",
+    artist: "Various Artists",
+    link: "",
+    img: "album_art/awesomemix_1.jpg",
+    note: "album_note/template.html"
+  },
+  
   {
     title: "The Rise And Fall Of Ziggy Stardust And The Spiders From Mars",
     artist: "David Bowie",
