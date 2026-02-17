@@ -1,17 +1,44 @@
-/* custom.css - 내가 추가한 스타일만 모아두는 파일 */
+/* ===== Global mobile hardening (applies to all pages) ===== */
 
-/* Pretendard를 "한글 우선"으로 쓰기 */
-body, input, select, textarea, button {
-  font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
-}
+/* 1) 레이아웃 계산 안정화 */
+*, *::before, *::after { box-sizing: border-box; }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: "Pretendard", "Source Sans Pro", sans-serif !important;
-}
+/* 2) 이미지/미디어가 컨테이너 밖으로 튀는 거 방지 */
+img, video, iframe { max-width: 100%; height: auto; }
 
-/* 한글 줄바꿈/가독성 튜닝(선택이지만 예뻐짐) */
-body {
-  line-height: 1.7;
-  letter-spacing: -0.01em;
-  word-break: keep-all;
+/* 3) 가로 스크롤(대부분의 “박살” 원인) 원천 차단 */
+html, body { overflow-x: hidden; }
+
+/* 4) flex 레이아웃에서 텍스트/이미지 때문에 밀리는 문제 방지 */
+#wrapper, #main, #sidebar, .inner { min-width: 0; }
+
+/* 5) 좁은 화면에서는 2단(메인+사이드바) -> 1단(세로) */
+@media (max-width: 736px) {
+
+  /* wrapper가 flex라면 모바일에서 세로로 */
+  #wrapper { 
+    display: block !important;
+  }
+
+  /* 메인/사이드바 폭 강제 */
+  #main, #sidebar {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* inner 패딩 과하면 줄이기(테마에 따라 너무 커서 난장판 되는 경우 많음) */
+  #main .inner {
+    padding: 1.25rem !important;
+  }
+
+  /* float 기반 레이아웃이 남아있으면 모바일에서 해제 */
+  [style*="float"], .left, .right {
+    float: none !important;
+  }
+
+  /* 코드블록/긴URL 때문에 가로 스크롤 나는 경우 */
+  pre, code {
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
 }
