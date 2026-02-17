@@ -108,31 +108,5 @@ body.sidebar-open .sidebar-toggle {
 }
 
 
-body.page-music header { min-width: 0; }
-
-body.page-music .banner .content {
-  flex: 1 1 auto;
-  min-width: 0; /* flex/overflow 핵심 */
-}
-
-body.page-music .album-title {
-  font-size: clamp(1rem, 1.8vw, 1.6rem);
-  display: block !important;
-  width: 100% !important;          /* 폭을 반드시 제한 */
-  max-width: 100% !important;
-
-  white-space: nowrap;       /* 기본은 한 줄 */
-  overflow: hidden;
-  text-overflow: ellipsis;   /* ... */
-
-  cursor: pointer;
-}
-
-body.page-music .album-title.is-open {
-  white-space: normal;     /* 클릭해서 펼칠 때는 예외 */
-  overflow: visible;
-  text-overflow: clip;
-}
-
                                   }
 
