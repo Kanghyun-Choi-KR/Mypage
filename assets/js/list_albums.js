@@ -5,7 +5,7 @@ const template = [
     artist: "",
     link: "",
     img: "album_art/.jpg",
-    note: "album_note/.html"
+    note: "album_note/template.html"
   },
 
 ];
@@ -13,6 +13,23 @@ const template = [
 
 const albums = [
 
+  {
+    title: "LOVE ALL SERVE ALL",
+    artist: "Fuji Kaze",
+    link: "",
+    img: "album_art/fuji_loveallserveall.jpg",
+    note: "album_note/template.html"
+  },
+
+
+  {
+    title: "Prema",
+    artist: "Fuji Kaze",
+    link: "",
+    img: "album_art/fuji_prema.jpg",
+    note: "album_note/template.html"
+  },
+  
   {
     title: "Guardians of the Galaxy: Awesome Mix Vol. 3",
     artist: "Various Artists",
