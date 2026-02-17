@@ -13,6 +13,21 @@ const template = [
 
 const albums = [
 
+  {
+    title: "Definitely Maybe",
+    artist: "Oasis",
+    link: "https://open.spotify.com/album/5zfhhKXHK0YQdvacCs1ErM?si=N0J0HbjwRHCYOKPq9w0MsQ",
+    img: "album_art/oasis_1st.jpg",
+    note: "album_note/template.html"
+  },
+  
+  {
+    title: "(What's The Story) Morning Glory?",
+    artist: "Oasis",
+    link: "https://open.spotify.com/album/6Srtm8a14PDdrpRUdvUdEO?si=hIodeecmTZuhv9uiAHd0Ug",
+    img: "album_art/oasis_2nd.jpg",
+    note: "album_note/template.html"
+  },
 
   {
     title: "LOVE",
