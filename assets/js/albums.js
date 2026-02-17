@@ -1,5 +1,3 @@
-import { albums } from "./list_albums.js";
-
 document.addEventListener("DOMContentLoaded", async () => {
 
   const list = document.getElementById("lpList");
