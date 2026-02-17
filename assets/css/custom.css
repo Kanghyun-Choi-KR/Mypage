@@ -12,7 +12,7 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
   position: fixed;
   top: 0.75rem;
 
-  left: 0.75rem;
+  left: 0;
   right: auto;
 
   z-index: 10002;
@@ -107,9 +107,9 @@ body.page-music .banner .content {
 }
 
 body.page-music .album-title {
-  font-size: clamp(1rem, 1.8vw, 1.6rem);
-  font-weight: 700;
-  line-height: 1.2;
+  display: block !important;
+  width: 100% !important;          /* 폭을 반드시 제한 */
+  max-width: 100% !important;
 
   white-space: nowrap;       /* 기본은 한 줄 */
   overflow: hidden;
