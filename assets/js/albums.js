@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     {
       title: "The Rise And Fall Of Ziggy Stardust And The Spiders From Mars",
       artist: "David Bowie",
+      link: "https://open.spotify.com/album/48D1hRORqJq52qsnUYZX56?si=YVVGxDWXS9-1rbK59FMMzQ"
       img: "album_art/davidbowie_stardust.jpg",
       note: "album_note/davidbowie_stardust.html"
     },
@@ -68,8 +69,14 @@ document.addEventListener("DOMContentLoaded", async () => {
                                     </div>
                                       </div>
                                         <span class="image object">
-                                            <img src="${album.img}" alt="">
-                                              </span>
+                                          ${album.link ? `
+                                              <a href="${album.link}" target="_blank" rel="noopener">
+                                                    <img src="${album.img}" alt="${album.title}">
+                                                        </a>
+                                                          ` : `
+                                                                <img src="${album.img}" alt="${album.title}">
+                                                                  `}
+                                        </span>
                                               `;
 
     list.appendChild(section);
