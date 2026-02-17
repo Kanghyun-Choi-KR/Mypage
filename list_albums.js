@@ -1,0 +1,1 @@
+./assets/js/list_albums.js
