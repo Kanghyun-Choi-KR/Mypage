@@ -1,28 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const btn = document.querySelector(".sidebar-toggle");
-  const sidebar = document.getElementById("sidebar");
-  if (!btn || !sidebar) return;
+    const btn = document.querySelector(".sidebar-toggle");
+    const sidebar = document.getElementById("sidebar");
+    if (!btn || !sidebar) return;
 
-  const setState = (open) => {
-    document.body.classList.toggle("sidebar-open", open);
-    btn.setAttribute("aria-expanded", open ? "true" : "false");
-  };
+    const open = () => {
+          document.body.classList.add("sidebar-open");
+          btn.setAttribute("aria-expanded", "true");
+        };
 
-  btn.addEventListener("click", () => {
-    setState(!document.body.classList.contains("sidebar-open"));
-  });
+    const close = () => {
+          document.body.classList.remove("sidebar-open");
+          btn.setAttribute("aria-expanded", "false");
+        };
 
-  // 오버레이(배경) 클릭하면 닫기
-  document.addEventListener("click", (e) => {
-    if (!document.body.classList.contains("sidebar-open")) return;
+    btn.addEventListener("click", (e) => {
+          e.stopPropagation();
+          document.body.classList.contains("sidebar-open") ? close() : open();
+        });
 
-    const clickedInsideSidebar = e.target.closest("#sidebar");
-    const clickedToggle = e.target.closest(".sidebar-toggle");
-    if (!clickedInsideSidebar && !clickedToggle) setState(false);
-  });
+    // Click outside to close
+    document.addEventListener("click", (e) => {
+          if (!document.body.classList.contains("sidebar-open")) return;
+          const insideSidebar = e.target.closest("#sidebar");
+          const isToggle = e.target.closest(".sidebar-toggle");
+          if (!insideSidebar && !isToggle) close();
+        });
 
-  // ESC로 닫기(PC/키보드)
-  document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") setState(false);
-  });
+    // ESC로 닫기
+    document.addEventListener("keydown", (e) => {
+          if (e.key === "Escape") close();
+        });
 });
+

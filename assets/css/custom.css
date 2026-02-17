@@ -37,6 +37,7 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
   position: fixed !important;
   top: 0 !important;
   left: 0 !important;
+  right: auto !important;
 
   width: min(85vw, 320px) !important;
   height: 100dvh !important;
@@ -97,6 +98,8 @@ body.sidebar-open .sidebar-toggle {
   transform: translateX(min(85vw, 320px));
 }
 
+
+body.page-music header { min-width: 0; }
 
 body.page-music .banner .content {
   min-width: 0; /* flex/overflow ÇÙ½É */
