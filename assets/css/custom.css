@@ -26,6 +26,7 @@ MOBILE SIDEBAR TOGGLE (Off-canvas)
   color: #fff;
 
   cursor: pointer;
+  transition: transform 0.25s ease;
 }
 
 /* ===============================
@@ -88,5 +89,13 @@ body.sidebar-open {
   overflow: hidden;
   touch-action: none;
 }
+
+
+/* 사이드바가 열리면 버튼을 사이드바 너비만큼 옆으로 이동 */
+body.sidebar-open .sidebar-toggle {
+  transform: translateX(min(85vw, 320px));
+}
+
+
                                   }
 
